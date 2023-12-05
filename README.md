@@ -17,19 +17,19 @@ A Call represents time spent at a location with a series of periodic checkins.
 
 ## Methods
 
-GET /api/Call - returns a list of calls
+**GET** /api/Call - returns a list of calls
 
-GET /api/Call/:id - returns a single call
+**GET** /api/Call/:id - returns a single call
 
-POST /api/Call/ - creates a new call
+**POST** /api/Call/ - creates a new call
 
-PUT /api/Call/:id - adds a checkin to a call
+**PUT** /api/Call/:id - adds a checkin to a call
 
-DELETE /api/Call/:id - deletes a call
+**DELETE** /api/Call/:id - deletes a call
 
 ## Tests
 
-Basic API CRUD test that creates, reads, updates then deletes a Call using Jest and Supertest
+Includes basic API CRUD test that creates, reads, updates then deletes a Call using Jest and Supertest
 
 
 
