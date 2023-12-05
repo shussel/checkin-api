@@ -1,5 +1,5 @@
 # checkin-api
-An Express JS/ MongoDB API used by [checkin-app](https://github.com/shussel/checkin-app}
+An Express JS/ MongoDB API used by [checkin-app](https://github.com/shussel/checkin-app)
 
 ## Schema
 A Call represents time spent at a location with a series of periodic checkins.
