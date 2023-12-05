@@ -31,6 +31,10 @@ A Call represents time spent at a location with a series of periodic checkins.
 
 Includes basic API CRUD test that creates, reads, updates then deletes a Call using Jest and Supertest
 
+## Deployment
+
+This app is hosted on an AWS EC2 instance using the pm2 process manager and an nginx proxy.
+
 
 
 
