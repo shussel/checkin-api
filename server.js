@@ -20,4 +20,4 @@ mongoose
 
 app.use('/api/Call', CallRoutes)
 
-app.listen(process.env.PORT, () => console.log(`App listening at http://localhost:${process.env.PORT}`))
+module.exports = app.listen(process.env.PORT, () => console.log(`App listening at http://localhost:${process.env.PORT}`))

@@ -27,8 +27,8 @@ router.post('/', async (req, res) => {
     const newCall = new Call(req.body)
     try {
         const call = await newCall.save()
-        if (!call) throw new Error('Something went wrong saving the call')
-        res.status(200).json(call)
+        if (!call) throw new Error('Error saving call')
+        res.status(201).json(call)
     } catch (error) {
         res.status(500).json({ message: error.message })
     }
@@ -45,6 +45,28 @@ router.patch('/:id', async (req, res) => {
         res.status(200).json(result)
     } catch (error) {
         res.status(500).json({ message: error.message, reqbody: req.body })
+    }
+})
+
+router.post('/', async (req, res) => {
+    const newCall = new Call(req.body)
+    try {
+        const call = await newCall.save()
+        if (!call) throw new Error('Could not save call')
+        res.status(201).json(call)
+    } catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+})
+
+router.delete('/:id', async (req, res) => {
+    const { id } = req.params
+    try {
+        const removed = await Call.findByIdAndDelete(id)
+        if (!removed) throw Error('Could not delete call')
+        res.status(200).json(removed)
+    } catch (error) {
+        res.status(500).json({ message: error.message })
     }
 })
 
