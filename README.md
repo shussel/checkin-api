@@ -23,7 +23,7 @@ A Call represents time spent at a location with a series of periodic checkins.
 
 **POST** /api/Call/ - creates a new call
 
-**PUT** /api/Call/:id - adds a checkin to a call
+**PATCH** /api/Call/:id - adds a checkin to a call
 
 **DELETE** /api/Call/:id - deletes a call
 
